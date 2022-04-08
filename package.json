@@ -1,0 +1,26 @@
+{
+  "name": "node_api",
+  "version": "1.0.0",
+  "description": "Primeira API",
+  "main": "index.js",
+  "scripts": {
+    "start":  "nodemon inde.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luanaflorencio/node_api.git"
+  },
+  "author": "Luana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luanaflorencio/node_api/issues"
+  },
+  "homepage": "https://github.com/luanaflorencio/node_api#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+  }
+}
