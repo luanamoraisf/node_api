@@ -10,3 +10,6 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(express.json())
 app.use(cors())
 
+app.listen(21262, () => {
+    console.log('Express started at https://localhost:21262')
+})
