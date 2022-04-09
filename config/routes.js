@@ -20,4 +20,17 @@ routes.post('/add', (req, res) => {
     return res.json(body)
 })
 
+routes.delete('/:id', (req, res) => {
+    const id = req.params.id
+
+    let newData = data.filter(item => {
+        if(!item[id])
+            return item
+    })
+
+    data = newData
+
+    return res.send(newData)
+})
+
 module.exports = routes
