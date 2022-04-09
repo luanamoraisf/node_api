@@ -20,6 +20,16 @@ app.get('/', (req, res) => {
     return res.json(data)
 })
 
+app.post('/add', (req, res) => {
+    const body = req.body
+
+    if(!body)
+        return res.status(400).end()
+
+    data.push(body)
+    return res.json(body)
+})
+
 app.listen(21262, () => {
     console.log('Express started at http://localhost:21262')
 })
