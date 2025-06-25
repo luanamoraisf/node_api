@@ -1,11 +1,6 @@
 const express = require('express')
 const routes = express.Router()
 
-let data = [
-    {'1': {Nome: 'Alana', Idade: '23'}},
-    {'2': {Nome: 'João', Idade: '19'}}
-]
-
 routes.get('/', (req, res) => {
     return res.json(data)
 })

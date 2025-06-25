@@ -13,6 +13,6 @@ app.use(express.json())
 app.use(cors())
 app.use(routes)
 
-app.listen(21262, () => {
-    console.log('Express started at http://localhost:21262')
+app.listen(3000, () => {
+    console.log('Express started at http://localhost:3000')
 })
